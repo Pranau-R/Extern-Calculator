@@ -1,2 +1,10 @@
 # Simple-Calculator
-All files regarding simple calculator.
+- objective:
+
+    To create a simple arithmetic operational calculator using Extern Keyword.
+
+- Assets
+
+- Docs
+
+- src
