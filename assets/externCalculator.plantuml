@@ -1,0 +1,54 @@
+@startuml
+
+start
+
+:Create an header file;
+:Declare 3 external float variable inside header file,
+                    2 for input and 1 for output.;
+:Create source file for each operation;
+:Link all source files inside header file;
+:Create a main file with Menu and Switch Cases;
+:Display Menu;
+:Declare variable choice;
+:Read Choice/
+
+while (choice is not exit) is (Yes)
+
+:Switch Choice;
+
+fork
+
+-> case1 (Addition);
+:result <- num1 + num2;
+
+fork again
+
+-> case2 (subtraction);
+:Check which number is bigger;
+:Then: result <- bignum - smallnum;
+
+fork again
+
+-> case3 (multiplication);
+:result <- num1 x num2;
+
+fork again
+
+-> case4 (division);
+:Check which number is bigger;
+:Then: result <- bignum / smallnum;
+
+end fork
+
+:Display output;
+:Read Choice/
+
+end while (No)
+
+stop
+
+@enduml
+
+
+
+
