@@ -1,0 +1,6 @@
+PS E:\Training\GitHub\Extern-Calculator\issue1\Extern-Calculator\src> cd "e:\Training\GitHub\Extern-Calculator\issue1\Extern-Calculator\src\" ; if ($?) { gcc mul.c -o mul } ; if ($?) { .\mul }
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cc5G7Ax3.o:mul.c:(.rdata$.refptr.result[.refptr.result]+0x0): undefined reference to `result'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o): in function `main':
+C:/M/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/crt0_c.c:18: undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Extern-Calculator\issue1\Extern-Calculator\src>
