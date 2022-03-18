@@ -1,5 +1,5 @@
 # Simple-Calculator
-- objective:
+- Objective:
 
     To create a simple arithmetic operational calculator using Extern Keyword.
 
@@ -13,7 +13,7 @@ The repository consists of following directories:
     It contains various issues we faced while developing Source for the given task. It is useful for future purpose while debugging an same kind of issue.
 
 
-- src:
+- Src:
 
     It contains our task's source. We can pull this source and work with it on any required time
 
@@ -23,4 +23,4 @@ The following is the Flowchart for the task:
 
 - Version:
 
-	Simple Calculator Version_v1.0.0
+    Simple Calculator Version_v1.0.0
