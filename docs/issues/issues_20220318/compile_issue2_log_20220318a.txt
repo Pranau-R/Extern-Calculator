@@ -1,0 +1,7 @@
+PS E:\Training\GitHub\Simple-Calculator\issue1\Simple-Calculator\src> cd "e:\Training\GitHub\Simple-Calculator\issue1\Simple-Calculator\src\" ; if ($?) { gcc main.c -o main } ; if ($?) { .\main }
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cctcL1rW.o:main.c:(.text+0x1d6): undefined reference to `add'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cctcL1rW.o:main.c:(.text+0x1f8): undefined reference to `sub'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cctcL1rW.o:main.c:(.text+0x21a): undefined reference to `mul'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cctcL1rW.o:main.c:(.rdata$.refptr.num1[.refptr.num1]+0x0): undefined reference to `num1'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cctcL1rW.o:main.c:(.rdata$.refptr.num2[.refptr.num2]+0x0): undefined reference to `num2'
+collect2.exe: error: ld returned 1 exit status
