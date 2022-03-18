@@ -3,7 +3,7 @@
 Module: add.c
 
 Function:
-    To add given two float intergers and store the value in result.
+    To add user entered two numbers and store the value in result.
 
 Copyright notice:
     This file copyright (C) 2022 by
@@ -36,7 +36,7 @@ Author:
 Name: add()
 
 Function:
-    To add given two float intergers and store the value in result.
+    To add user entered two numbers and store the value in result.
 
 Definition:
     float add (float num1, float num2);
@@ -48,21 +48,23 @@ Description:
     It is a float function and returns integer of float type.
 
 Returns:
-    Functions returning type void: float.
+    Functions returning type float: integers.
 
 */
 
 float add (float num1, float num2)
     {
-    printf("---You Choose Addition---");
+    float result;
 
-    printf("Enter Number 1: %.2f");
-    scanf("%.2f", &num1);
+    printf("---You Selected Addition---\n");
 
-    printf("Enter Number 2: %.2f");
-    scanf("%.2f", &num2);
+    printf("Enter a Number: ");
+    scanf("%f", &num1);
+
+    printf("Enter another Number: ");
+    scanf("%f", &num2);
 
     result = num1 + num2;
 
-    printf("The addition of two numbers is: %.2f", result);
+    printf("The addition of two numbers is: %.2f\n", result);
     }

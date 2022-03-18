@@ -3,7 +3,7 @@
 Module: mul.c
 
 Function:
-    To multiply given two float intergers and store the value in result.
+    To multiply user entered two numbers and store the value in result.
 
 Copyright notice:
     This file copyright (C) 2022 by
@@ -36,7 +36,7 @@ Author:
 Name: mul()
 
 Function:
-    To multiply given two float intergers and store the value in result.
+    To multiply user entered two numbers and store the value in result.
 
 Definition:
     float mul (float num1, float num2);
@@ -48,21 +48,23 @@ Description:
     It is a float function and returns integer of float type.
 
 Returns:
-    Functions returning type void: float.
+    Functions returning type float: integers.
 
 */
 
-float add (float num1, float num2)
+float mul (float num1, float num2)
     {
-    printf("---You Choose Multiplicaton---");
+    float result;
 
-    printf("Enter Number 1: %.2f");
-    scanf("%.2f", &num1);
+    printf("---You Selected Multiplicaton---\n");
 
-    printf("Enter Number 2: %.2f");
-    scanf("%.2f", &num2);
+    printf("Enter a Number: ");
+    scanf("%f", &num1);
 
-    result = num1 + num2;
+    printf("Enter another Number: ");
+    scanf("%f", &num2);
 
-    printf("The Multiplication of two numbers is: %.2f", result);
+    result = num1 * num2;
+
+    printf("The Multiplication of two numbers is: %.2f\n", result);
     }
