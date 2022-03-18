@@ -3,8 +3,24 @@
 
     To create a simple arithmetic operational calculator using Extern Keyword.
 
-- Assets
+The repository consists of following directories:
+- Assets:
 
-- Docs
+    Assets are flowchart files. We created our flowchart for the task using Plantuml and stored it here.
 
-- src
+- Docs:
+
+    It contains various issues we faced while developing Source for the given task. It is useful for future purpose while debugging an same kind of issue.
+
+
+- src:
+
+    It contains our task's source. We can pull this source and work with it on any required time
+
+The following is the Flowchart for the task:
+
+![Simple Calculator](assets/simpleCalculator.png)
+
+- Version:
+
+	Simple Calculator Version_v1.0.0
