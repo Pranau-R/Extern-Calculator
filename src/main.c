@@ -23,7 +23,6 @@ Author:
 */
 
 #include <stdio.h>
-#include <stdlib.h>
 #include "arith.h"
 
 /****************************************************************************\
@@ -40,32 +39,39 @@ Function:
     To display an user interactive Menu for simple calculator using switch cases.
 
 Definition:
-    float main (void);
-
-Description:
-    It is a float function and returns integer of float type.
+    void main (void);
 
 Returns:
-    Functions returning type float: integers.
+    Functions returning type void: nothing.
 
 */
 
-float main()
+void main()
     {
-    float num1, num2;
-
-    float add(float num1, float num2);
+    /*float add(float num1, float num2);
     float sub(float num1, float num2);
     float mul(float num1, float num2);
-    float division(float num1, float num2);
-
+    float division(float num1, float num2);*/
+    extern float num1, num2;
+    void add ();
+    void sub ();
+    void mul ();
+    void division();
     int ch;
 
     printf("\n");
-    printf("-----------------------------------------------------\n");
+    printf("--------------------------------------------------------------------------------\n");
     printf("This is simpleCalculator.exe v1.0.0\n");
-    printf("-----------------------------------------------------\n");
+    printf("It can perform basic arithmetic operations for any two given numbers.\n");
+    printf("--------------------------------------------------------------------------------\n");
     printf("\n");
+
+    printf("\nEnter Number a: \n");
+    scanf("%f", &num1);
+
+    printf("\nEnter Number b: \n");
+    scanf("%f", &num2);
+ 
     printf("======== MENU ======== \n");
     printf("1. Addition: \n");
     printf("2. Subtraction: \n");
@@ -76,6 +82,15 @@ float main()
 
     while(1)
         {
+
+        /*printf("======== MENU ======== \n");
+        printf("1. Addition: \n");
+        printf("2. Subtraction: \n");
+        printf("3. Multiplication: \n");
+        printf("4. Division: \n");
+        printf("5. Exit: \n");
+        printf("\n")*/
+
         printf("\nEnter the Choice: \n");
         scanf("%d", &ch);
 
@@ -83,29 +98,31 @@ float main()
             {
             case 1:
                 {
-                add(num1, num2);
+                //printf("Hello\n");
+                add();
                 break;
                 }
             case 2:
                 {
-                sub(num1, num2);
+                sub();
                 break;
                 }
             case 3:
                 {
-                mul(num1, num2);
+                mul();
                 break;
                 }
             case 4:
                 {
-                division(num1, num2);
+                division();
                 break;
                 }
             case 5:
-                exit(0);
+                return;
 
             default:
                 printf("Invalid Entry!!!\n\n");
+                //return;
             }
         }
     }

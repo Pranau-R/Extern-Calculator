@@ -39,22 +39,19 @@ Function:
     To multiply user entered two numbers and store the value in result.
 
 Definition:
-    float mul (float num1, float num2);
-    
-Parameter and Arguments:
-    float num1 and float num2 are two arguments used to pass float value inside this function.
+    void mul (void);
 
 Description:
-    It is a float function and returns integer of float type.
+    It has no return value and no arguments
 
 Returns:
-    Functions returning type float: integers.
+    Functions returning type void: nothing.
 
 */
 
-float mul (float num1, float num2)
+void mul ()
     {
-    float result;
+    /*float result;
 
     printf("---You Selected Multiplicaton---\n");
 
@@ -62,7 +59,7 @@ float mul (float num1, float num2)
     scanf("%f", &num1);
 
     printf("Enter another Number: ");
-    scanf("%f", &num2);
+    scanf("%f", &num2);*/
 
     result = num1 * num2;
 

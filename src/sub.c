@@ -41,22 +41,19 @@ Function:
     the bigger number by smaller number and store the value in result.
 
 Definition:
-    float sub (float num1, float num2);
-    
-Parameter and Arguments:
-    float num1 and float num2 are two arguments used to pass float value inside this function.
+    void sub (void);
 
 Description:
-    It is a float function and returns integer of float type.
+    It has no return value and no arguments
 
 Returns:
-    Functions returning type float: integers.
+    Functions returning type void: nothing.
 
 */
 
-float sub (float num1, float num2)
+void sub ()
     {
-    float result;
+    /*float result;
 
     printf("---You Selected Subtraction---\n");
 
@@ -64,7 +61,9 @@ float sub (float num1, float num2)
     scanf("%f", &num1);
 
     printf("Enter another Number: ");
-    scanf("%f", &num2);
+    scanf("%f", &num2);*/
+
+    float num1, num2, result;
 
     if (num1 > num2)
         {

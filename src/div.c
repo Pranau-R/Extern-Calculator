@@ -41,22 +41,19 @@ Function:
     the bigger number(divident) by smaller number(divisor) and store the value in result.
 
 Definition:
-    float division (float num1, float num2);
-    
-Parameter and Arguments:
-    float num1 and float num2 are two arguments used to pass float value inside this function.
+    void division (void);
 
 Description:
-    It is a float function and returns integer of float type.
+    It has no return value and no arguments
 
 Returns:
-    Functions returning type float: integers.
+    Functions returning type void: nothing.
 
 */
 
-float division (float num1, float num2)
+void division ()
     {
-    float result;
+    /*float result;
 
     printf("---You Selected Divison---\n");
 
@@ -64,7 +61,7 @@ float division (float num1, float num2)
     scanf("%f", &num1);
 
     printf("Enter another Number: ");
-    scanf("%f", &num2);
+    scanf("%f", &num2);*/
 
     if (num1 > num2)
         {
