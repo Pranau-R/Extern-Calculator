@@ -22,7 +22,6 @@ Author:
 
 */
 
-#include <stdio.h>
 #include "arith.h"
 
 /****************************************************************************\
@@ -39,32 +38,17 @@ Function:
     To add user entered two numbers and store the value in result.
 
 Definition:
-    float add (float num1, float num2);
-    
-Parameter and Arguments:
-    float num1 and float num2 are two arguments used to pass float value inside this function.
+    void add (void);
 
 Description:
-    It is a float function and returns integer of float type.
+    It has no return value and no arguments
 
 Returns:
-    Functions returning type float: integers.
+    Functions returning type void: nothing.
 
 */
 
-float add (float num1, float num2)
+void add ()
     {
-    float result;
-
-    printf("---You Selected Addition---\n");
-
-    printf("Enter a Number: ");
-    scanf("%f", &num1);
-
-    printf("Enter another Number: ");
-    scanf("%f", &num2);
-
     result = num1 + num2;
-
-    printf("The addition of two numbers is: %.2f\n", result);
     }

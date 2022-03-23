@@ -23,4 +23,4 @@ The following is the Flowchart for the task:
 
 - Version:
 
-    Simple Calculator Version_v1.0.0
+    Simple Calculator Version_v1.1.0

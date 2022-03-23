@@ -23,7 +23,6 @@ Author:
 
 */
 
-#include <stdio.h>
 #include "arith.h"
 
 /****************************************************************************\
@@ -41,31 +40,18 @@ Function:
     the bigger number(divident) by smaller number(divisor) and store the value in result.
 
 Definition:
-    float division (float num1, float num2);
-    
-Parameter and Arguments:
-    float num1 and float num2 are two arguments used to pass float value inside this function.
+    void division (void);
 
 Description:
-    It is a float function and returns integer of float type.
+    It has no return value and no arguments
 
 Returns:
-    Functions returning type float: integers.
+    Functions returning type void: nothing.
 
 */
 
-float division (float num1, float num2)
+void division ()
     {
-    float result;
-
-    printf("---You Selected Divison---\n");
-
-    printf("Enter a Number: ");
-    scanf("%f", &num1);
-
-    printf("Enter another Number: ");
-    scanf("%f", &num2);
-
     if (num1 > num2)
         {
         result = num1 / num2;
@@ -74,6 +60,4 @@ float division (float num1, float num2)
         {
         result = num2 / num1;
         }
-
-    printf("The Division of two numbers is: %.2f\n", result);
     }

@@ -1,0 +1,74 @@
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator>
+
+ Session contents restored from 3/23/2022 at 11:01:01 AM 
+
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator> cd .\src
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccg0Ko5D.o:add.c:(.rdata$.refptr.result[.refptr.result]+0x0): undefined reference to `result'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccg0Ko5D.o:add.c:(.rdata$.refptr.num2[.refptr.num2]+0x0): undefined reference to `num2'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccg0Ko5D.o:add.c:(.rdata$.refptr.num1[.refptr.num1]+0x0): undefined reference to `num1'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccpUM0DB.o:add.c:(.rdata$.refptr.num2[.refptr.num2]+0x0): undefined reference to `num2'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccpUM0DB.o:add.c:(.rdata$.refptr.num1[.refptr.num1]+0x0): undefined reference to `num1'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccJJVlnX.o:add.c:(.rdata$.refptr.num2[.refptr.num2]+0x0): undefined reference to `num2'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccJJVlnX.o:add.c:(.rdata$.refptr.num1[.refptr.num1]+0x0): undefined reference to `num1'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccl5woU8.o:main.c:(.text+0x1f1): undefined reference to `add'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cc9UYU9g.o:main.c:(.text+0x1f1): undefined reference to `add'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccEjm40W.o:main.c:(.text+0x1f1): undefined reference to `add'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc Wall  main.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find Wall: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc - Wall main.c
+gcc.exe: error: -E or -x required when input is from standard input
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc -Wall main.c
+main.c:49:6: warning: return type of 'main' is not 'int' [-Wmain]
+   49 | void main()
+      |      ^~~~
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\ccpMhKAV.o:main.c:(.text+0x1f1): undefined reference to `add'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c -o calci
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cc1jzUqV.o:add.c:(.bss+0x0): multiple definition of `num1'; C:\Users\Pranau\AppData\Local\Temp\ccgm1wgs.o:main.c:(.bss+0x0): first defined here
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cc1jzUqV.o:add.c:(.bss+0x4): multiple definition of `num2'; C:\Users\Pranau\AppData\Local\Temp\ccgm1wgs.o:main.c:(.bss+0x4): first defined here
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\Pranau\AppData\Local\Temp\cc1jzUqV.o:add.c:(.bss+0x8): multiple definition of `result'; C:\Users\Pranau\AppData\Local\Temp\ccgm1wgs.o:main.c:(.bss+0x8): first defined here
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc -Wall main.c add.c sub.c
+main.c:51:6: warning: return type of 'main' is not 'int' [-Wmain]
+   51 | void main()
+      |      ^~~~
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c -o calci
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c
+main.c: In function 'main':
+main.c:99:17: warning: implicit declaration of function 'add' [-Wimplicit-function-declaration]
+   99 |                 add();
+      |                 ^~~
+main.c:104:17: warning: implicit declaration of function 'sub' [-Wimplicit-function-declaration]
+  104 |                 sub();
+      |                 ^~~
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c mul.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c mul.c -o calci
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c mul.c div.c
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c sub.c mul.c div.c -o calci

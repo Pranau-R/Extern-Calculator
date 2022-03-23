@@ -1,0 +1,9 @@
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src> gcc main.c add.c
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\User
+tr.result[.refptr.result]+0x0): undefined reference to `result'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\User
+r.num2[.refptr.num2]+0x0): undefined reference to `num2'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\User
+r.num1[.refptr.num1]+0x0): undefined reference to `num1'
+collect2.exe: error: ld returned 1 exit status
+PS E:\Training\GitHub\Simple-Calculator\issue3\Simple-Calculator\src>

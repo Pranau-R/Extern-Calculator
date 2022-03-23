@@ -3,7 +3,7 @@
 Module: arith.h
 
 Function:
-    To declare extern variable and extern function for simple arithmetic operations.
+    To declare extern function for simple arithmetic operations.
 
 Copyright notice:
     This file copyright (C) 2022 by
@@ -21,19 +21,20 @@ Author:
     Pranau R, MCCI Corporation   March 2022
 
 */
-#ifndef _ARITH_H_
-#define _ARITH_H_
+#ifndef _ARITH_H
+#define _ARITH_H
 
 /****************************************************************************\
 |
-|   Global Variable and Functions.
+|   Global variables and Functions.
 |
 \****************************************************************************/
 
 extern float num1, num2, result;
-extern float add(float num1, float num2);
-extern float sub(float num1, float num2);
-extern float mul(float num1, float num2);
-extern float division(float num1, float num2);
+
+void add();
+void sub();
+void mul();
+void division();
 
 #endif
