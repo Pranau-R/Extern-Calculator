@@ -22,7 +22,6 @@ Author:
 
 */
 
-#include <stdio.h>
 #include "arith.h"
 
 /****************************************************************************\
@@ -31,7 +30,7 @@ Author:
 |
 \****************************************************************************/
 
-extern float num1, num2;
+extern float num1, num2, result;
 
 /****************************************************************************\
 |
@@ -59,9 +58,5 @@ Returns:
 
 void add ()
     {
-    float result;
-
     result = num1 + num2;
-
-    printf("The addition of two numbers is: %.2f\n", result);
     }

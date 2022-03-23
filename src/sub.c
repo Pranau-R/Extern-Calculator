@@ -23,7 +23,6 @@ Author:
 
 */
 
-#include <stdio.h>
 #include "arith.h"
 
 /****************************************************************************\
@@ -32,7 +31,7 @@ Author:
 |
 \****************************************************************************/
 
-extern float num1, num2;
+extern float num1, num2, result;
 
 /****************************************************************************\
 |
@@ -61,8 +60,6 @@ Returns:
 
 void sub ()
     {
-    float result;
-
     if (num1 > num2)
         {
         result = num1 - num2;
@@ -71,6 +68,4 @@ void sub ()
         {
         result = num2 - num1;
         }
-
-    printf("The subtraction of two numbers is: %.2f\n", result);
     }

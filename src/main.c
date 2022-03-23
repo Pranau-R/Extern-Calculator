@@ -31,7 +31,7 @@ Author:
 |
 \****************************************************************************/
 
-float num1, num2;
+float num1, num2, result;
 
 /****************************************************************************\
 |
@@ -76,7 +76,8 @@ void main()
     printf("2. Subtraction: \n");
     printf("3. Multiplication: \n");
     printf("4. Division: \n");
-    printf("5. Exit: \n");
+    printf("5. Modify Input: \n");
+    printf("6. Exit: \n");
     printf("\n");
 
     while(1)
@@ -88,25 +89,43 @@ void main()
             {
             case 1:
                 {
+                printf("---You selected Addition---\n");
                 add();
+                printf("The addition of two numbers is: %.2f\n", result);
                 break;
                 }
             case 2:
                 {
+                printf("---You selected Subtraction---\n");
                 sub();
+                printf("The subtraction of two numbers is: %.2f\n", result);
                 break;
                 }
             case 3:
                 {
+                printf("---You selected Multiplication---\n");
                 mul();
+                printf("The Multiplication of two numbers is: %.2f\n", result);
                 break;
                 }
             case 4:
                 {
+                printf("---You selected Division---\n");
                 division();
+                printf("The Division of two numbers is: %.2f\n", result);
                 break;
                 }
             case 5:
+                {
+                printf("---You selected modification---\n\n");
+                printf("\nEnter Number a: \n");
+                scanf("%f", &num1);
+
+                printf("\nEnter Number b: \n");
+                scanf("%f", &num2);
+                break;
+                }
+            case 6:
                 return;
 
             default:

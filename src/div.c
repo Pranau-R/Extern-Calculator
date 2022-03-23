@@ -23,7 +23,6 @@ Author:
 
 */
 
-#include <stdio.h>
 #include "arith.h"
 
 /****************************************************************************\
@@ -32,7 +31,7 @@ Author:
 |
 \****************************************************************************/
 
-extern float num1, num2;
+extern float num1, num2, result;
 
 /****************************************************************************\
 |
@@ -61,8 +60,6 @@ Returns:
 
 void division ()
     {
-    float result;
-
     if (num1 > num2)
         {
         result = num1 / num2;
@@ -71,6 +68,4 @@ void division ()
         {
         result = num2 / num1;
         }
-
-    printf("The Division of two numbers is: %.2f\n", result);
     }
