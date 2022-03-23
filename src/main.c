@@ -91,7 +91,7 @@ void main()
                 add();
                 break;
                 }
-            /*case 2:
+            case 2:
                 {
                 sub();
                 break;
@@ -105,7 +105,7 @@ void main()
                 {
                 division();
                 break;
-                }*/
+                }
             case 5:
                 return;
 
