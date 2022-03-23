@@ -26,9 +26,11 @@ Author:
 
 /****************************************************************************\
 |
-|   Global Functions.
+|   Global variables and Functions.
 |
 \****************************************************************************/
+
+extern float num1, num2, result;
 
 void add();
 void sub();
