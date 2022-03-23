@@ -27,7 +27,15 @@ Author:
 
 /****************************************************************************\
 |
-|   Function.
+|   Global Variables.
+|
+\****************************************************************************/
+
+float num1, num2;
+
+/****************************************************************************\
+|
+|   Main Function.
 |
 \****************************************************************************/
 
@@ -48,20 +56,11 @@ Returns:
 
 void main()
     {
-    /*float add(float num1, float num2);
-    float sub(float num1, float num2);
-    float mul(float num1, float num2);
-    float division(float num1, float num2);*/
-    extern float num1, num2;
-    void add ();
-    void sub ();
-    void mul ();
-    void division();
     int ch;
 
     printf("\n");
     printf("--------------------------------------------------------------------------------\n");
-    printf("This is simpleCalculator.exe v1.0.0\n");
+    printf("This is simpleCalculator.exe v1.1.0\n");
     printf("It can perform basic arithmetic operations for any two given numbers.\n");
     printf("--------------------------------------------------------------------------------\n");
     printf("\n");
@@ -82,15 +81,6 @@ void main()
 
     while(1)
         {
-
-        /*printf("======== MENU ======== \n");
-        printf("1. Addition: \n");
-        printf("2. Subtraction: \n");
-        printf("3. Multiplication: \n");
-        printf("4. Division: \n");
-        printf("5. Exit: \n");
-        printf("\n")*/
-
         printf("\nEnter the Choice: \n");
         scanf("%d", &ch);
 
@@ -98,11 +88,10 @@ void main()
             {
             case 1:
                 {
-                //printf("Hello\n");
                 add();
                 break;
                 }
-            case 2:
+            /*case 2:
                 {
                 sub();
                 break;
@@ -116,13 +105,12 @@ void main()
                 {
                 division();
                 break;
-                }
+                }*/
             case 5:
                 return;
 
             default:
                 printf("Invalid Entry!!!\n\n");
-                //return;
             }
         }
     }

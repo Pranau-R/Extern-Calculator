@@ -28,6 +28,14 @@ Author:
 
 /****************************************************************************\
 |
+|   Global Variables.
+|
+\****************************************************************************/
+
+extern float num1, num2;
+
+/****************************************************************************\
+|
 |   Function.
 |
 \****************************************************************************/
@@ -53,17 +61,7 @@ Returns:
 
 void sub ()
     {
-    /*float result;
-
-    printf("---You Selected Subtraction---\n");
-
-    printf("Enter a Number: ");
-    scanf("%f", &num1);
-
-    printf("Enter another Number: ");
-    scanf("%f", &num2);*/
-
-    float num1, num2, result;
+    float result;
 
     if (num1 > num2)
         {

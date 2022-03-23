@@ -27,6 +27,14 @@ Author:
 
 /****************************************************************************\
 |
+|   Global Variables.
+|
+\****************************************************************************/
+
+extern float num1, num2;
+
+/****************************************************************************\
+|
 |   Function.
 |
 \****************************************************************************/
@@ -51,20 +59,9 @@ Returns:
 
 void add ()
     {
-    /*float result;
-
-    printf("---You Selected Addition---\n");
-
-    printf("Enter a Number: ");
-    scanf("%f", &num1);
-
-    printf("Enter another Number: ");
-    scanf("%f", &num2);*/
-
-    //result = num1 + num2;
-
-    float num1, num2, result;
+    float result;
 
     result = num1 + num2;
+
     printf("The addition of two numbers is: %.2f\n", result);
     }

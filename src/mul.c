@@ -27,6 +27,14 @@ Author:
 
 /****************************************************************************\
 |
+|   Global Variables.
+|
+\****************************************************************************/
+
+extern float num1, num2;
+
+/****************************************************************************\
+|
 |   Function.
 |
 \****************************************************************************/
@@ -51,15 +59,7 @@ Returns:
 
 void mul ()
     {
-    /*float result;
-
-    printf("---You Selected Multiplicaton---\n");
-
-    printf("Enter a Number: ");
-    scanf("%f", &num1);
-
-    printf("Enter another Number: ");
-    scanf("%f", &num2);*/
+    float result;
 
     result = num1 * num2;
 
