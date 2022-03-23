@@ -3,11 +3,11 @@
 start
 
 :Create an header file;
-:Declare 3 external float variable inside header file,
-                    2 for input and 1 for output.;
-:Create source file for each operation;
-:Link all source files inside header file;
-:Create a main file with Menu and Switch Cases;
+:Declare 4 external functions for each operation;
+:Create different source file for each operation;
+:Link all source files with header file;
+:Create a main file with global variable, Menu and Switch Cases;
+:Link main file with header file;
 :Display Menu;
 :Declare variable choice;
 :Read Choice/
@@ -48,7 +48,3 @@ end while (No)
 stop
 
 @enduml
-
-
-
-
